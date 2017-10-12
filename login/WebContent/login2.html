@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br />
+    <input type="button" value="Login"  onclick="javascript:validate()" />
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "workshop"
+       && document.getElementById("text2").value == "workshop" )
+    {
+        alert( "validation succeeded" );
+        location.href="run.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        location.href="fail.html";
+    }
+}
+
+</body>
+</html>
